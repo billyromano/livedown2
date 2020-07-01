@@ -1,5 +1,24 @@
-# Livedown
-*Originally based on [shive/linedown](https://github.com/shime/livedown) with improvements.*
+# Livedown2
+[![Build Status](https://travis-ci.com/billyromano/livedown2.svg?branch=master)](https://travis-ci.com/billyromano/livedown2)
+[![Downloads](https://img.shields.io/npm/dt/livedown2.svg)](https://npmjs.org/package/livedown2)
+
+*Originally based on [shive/linedown](https://github.com/shime/livedown).*
+
+## Table of Contents
+- [Overview](#overview)
+    - [Demos.](#demos)
+- [Installation](#installation)
+- [Usage](#usage)
+    - [Examples](#examples)
+        - [Help Command](#help-command)
+        - [Specify port](#specify-port)
+        - [Open README.md preview in browser](#open-readme.md-preview-in-browser)
+        - [Open README.md preview in a specific browser with arguments](#open-readme.md-preview-in-a-specific-browser-with-arguments)
+- [Features](#features)
+    - [Plugins](#plugins)
+    - [IDE Integrations](#ide-integrations)
+- [Alternatives](#alternatives)
+- [License](#license)
 
 ## Overview
 
@@ -11,29 +30,43 @@ Easily render markdown documents using the command line (CLI) based on the next 
 * [Safe](https://github.com/markdown-it/markdown-it/tree/master/docs/security.md) by default.
 * Community-written plugins and other packages on npm.
 
-### View the [Live Demo](https://markdown-it.github.io) to try it out or check out the screen capture below.
-### ![](https://twobucks.co/assets/livedown.gif)
-
-[![Build Status](https://travis-ci.com/billyromano/livedown2.svg?branch=master)](https://travis-ci.com/billyromano/livedown2)
-[![Downloads](https://img.shields.io/npm/dt/livedown2.svg)](https://npmjs.org/package/livedown2)
+### Demos
+View the [Live Demo](https://markdown-it.github.io) to try it out or check out the screen capture below.
+![](https://twobucks.co/assets/livedown.gif)
 
 ## Installation
 
-    $ npm install -g livedown2
+    $ npm i -g livedown2
 
 ## Usage
 
-    $ livedown2 --help
+Typing either `livedown` or `livedown2` will work.
 
+    $ livedown
+
+### Examples
+#### Help
+    $ livedown -h
+
+#### Specify port
+    $ livedown start README.md --port 4242
+
+#### Open README.md preview in browser
+    $ livedown start README.md --open
+
+#### Open README.md preview in a specific browser with arguments
+This feature relies on specific CLI commands available for the browser of your choosing, e.g., --incognito for Google Chrome.
+
+    $ livedown start README.md --open --browser "'google chrome' --incognito"
+    
 ## Features
 
-### Plugins
+### Installed Plugins
 
-* Emojis :sparkles: :smile: :tada:
-* GitHub flavored clickable headings/permalinks
-* GitHub flavored checkboxes
+* [Emoji](https://github.com/markdown-it/markdown-it-emoji) :sparkles: :smile: :tada:
+* [GitHub flavored clickable headings/permalinks](https://github.com/Flet/markdown-it-github-headings)
+* [GitHub flavored checkboxes](https://github.com/linsir/markdown-it-task-checkbox)
 * Real-time instant preview
-* And more!
 * **NEW as of 7/1/2020:** 
     * [Subscript](https://github.com/markdown-it/markdown-it-sub)
     * [Superscript](https://github.com/markdown-it/markdown-it-sup)
