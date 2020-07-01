@@ -26,8 +26,8 @@ var md = markdownIt({
   .use(markdownItTaskCheckbox)
   .use(markdownItEmoji)
   .use(markdownItGitHubHeadings, {
-  prefix: ''
-})
+    prefix: ''
+  })
   .use(markdownItSub)
   .use(markdownItSup)
   .use(markdownItFootnote)
