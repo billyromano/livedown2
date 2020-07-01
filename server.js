@@ -11,16 +11,30 @@ var markdownIt = require('markdown-it')
 var markdownItTaskCheckbox = require('markdown-it-task-checkbox')
 var markdownItEmoji = require('markdown-it-emoji')
 var markdownItGitHubHeadings = require('markdown-it-github-headings')
+var markdownItSub = require('markdown-it-sub')
+var markdownItSup = require('markdown-it-sup')
+var markdownItFootnote = require('markdown-it-footnote')
+var markdownItDeflist = require('markdown-it-deflist')
+var markdownItAbbr = require('markdown-it-abbr')
+var markdownItIns = require('markdown-it-ins')
+var markdownItMark = require('markdown-it-mark')
 
 var md = markdownIt({
   html: true,
   linkify: true
 })
-md.use(markdownItTaskCheckbox)
-md.use(markdownItEmoji)
-md.use(markdownItGitHubHeadings, {
+  .use(markdownItTaskCheckbox)
+  .use(markdownItEmoji)
+  .use(markdownItGitHubHeadings, {
   prefix: ''
 })
+  .use(markdownItSub)
+  .use(markdownItSup)
+  .use(markdownItFootnote)
+  .use(markdownItDeflist)
+  .use(markdownItAbbr)
+  .use(markdownItIns)
+  .use(markdownItMark)
 
 var app = express()
 var server = http.Server(app)
