@@ -1,0 +1,23 @@
+usage: livedown2 {COMMANDS} <PATH> {OPTIONS}
+
+  Previews markdown from PATH in browser and watches for changes.
+
+COMMANDS:
+
+  start PATH      Starts watching a file on a given absolute PATH.
+  stop            Stops the livedown2 process.
+
+OPTIONS:
+
+  -h, --help      You're reading it.
+  --open          Opens the preview in the browser.
+  --verbose       Provides debug messages.
+  --port PORT     Specifies the port to use.
+  --browser       Specifies the browser command line to execute.
+
+EXAMPLES:
+
+  livedown2 start README.md --port 4242
+  livedown2 start README.md --open --browser "firefox -P livedown2"
+  livedown2 start README.md --open --browser "'google chrome' --incognito"
+  livedown2 stop
