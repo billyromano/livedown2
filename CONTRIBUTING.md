@@ -1,17 +1,47 @@
-# Contributing
+# Contributing to `livedown2`
+We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+- Reporting a bug
+- Discussing the current state of the code
+- Submitting a fix
+- Proposing new features
+- Becoming a maintainer
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+## We Develop with Github
+We use github to host code, to track issues and feature requests, as well as accept pull requests.
 
-## Pull Request Process
+## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
-   variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of one admin developers, or if you 
-   do not have permission to do that, you may request the reviewer to merge it for you.
+1. Fork the repo and create your branch from `master`.
+2. If you've added code that should be tested, add tests.
+3. If you've changed APIs, update the documentation.
+4. Ensure the test suite passes.
+5. Make sure your code lints.
+6. Issue that pull request!
+
+## Report bugs using Github's [issues](https://github.com/billyromano/livedown2/issues)
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
+
+## Write bug reports with detail, background, and sample code
+We use the standard bug report template created by GitHub to make it easier for you to provide enough detail for your issue.
+
+**Great Bug Reports** tend to have:
+
+- A quick summary and/or background
+- Steps to reproduce
+  - Be specific!
+  - Give sample code if you can.
+- What you expected would happen
+- What actually happens
+- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+
+People *love* thorough bug reports. I'm not even kidding.
+
+## Use a Consistent Coding Style
+
+* 2 spaces for indentation rather than tabs
+* You can try running `npm run lint` for style unification
+
+## License
+By contributing, you agree that your contributions will be licensed under its [MIT License](http://choosealicense.com/licenses/mit/).
